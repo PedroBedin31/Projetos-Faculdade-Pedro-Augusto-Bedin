@@ -1,17 +1,33 @@
 nome = str(input("Digite o seu nome: "))
+curso = str(input("Digite o seu curso: "))
+semestre = str(input("Digite o seu semestre: "))
 disciplina = str(input("Digite o seu disciplina: "))
-nota = int(input("Digite o valor da nota: "))
+nota1 = int(input("Digite o valor da primeira nota: "))
+nota2 = int(input("Digite o valor da segunda nota: "))
+media = (nota1 + nota2) / 2
 
-print("----------BOLETIM DE NOTAS----------")
+nota1 = max(0,min(nota1, 100))
+nota2 = max(0,min(nota2, 100))
+media = max(0, min(media, 100))
+
+if media >= 0 and media <= 39:
+    resultado = "VOCÊ FOI REPROVADO! "
+elif media >= 40 and media <= 59:
+    resultado = "VOCÊ ESTÁ DE RECUPERAÇÃO! "
+elif media >= 60 and media <= 100:
+    resultado = "VOCÊ FOI APROVADO! "
+
+print("----------BOLETIM DE NOTAS----------\n")
 print(f"Seu nome: {nome}")
+print(f"Curso: {curso}")
+print(f"Semestre: {semestre}")
 print(f"Disciplina: {disciplina}")
-print(f"Sua nota: {nota}")
+print(f"Nota 1: {nota1}")
+print(f"Nota 2: {nota2}")
+print(f"Media: {media}")
+print(f"Status: {resultado}")
+print("\n----------BOLETIM DE NOTAS----------")
 
-if nota >= 0 and nota <= 39:
-    print("RESULTADO: VOCÊ FOI REPROVADO! ")
-elif nota >= 40 and nota <= 59:
-    print("RESULTADO: VOCÊ ESTÁ DE RECUPERAÇÃO! ")
-elif nota >= 60 and nota <= 100:
-    print(f"RESULTADO: VOCÊ FOI APROVADO! ")
 
-print("----------BOLETIM DE NOTAS----------")
+
+
