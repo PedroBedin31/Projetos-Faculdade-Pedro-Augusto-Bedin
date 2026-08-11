@@ -17,7 +17,7 @@ elif media >= 40 and media <= 59:
 elif media >= 60 and media <= 100:
     resultado = "VOCÊ FOI APROVADO! "
 
-print("----------BOLETIM DE NOTAS----------\n")
+print("\n----------BOLETIM DE NOTAS----------")
 print(f"Seu nome: {nome}")
 print(f"Curso: {curso}")
 print(f"Semestre: {semestre}")
@@ -26,7 +26,7 @@ print(f"Nota 1: {nota1}")
 print(f"Nota 2: {nota2}")
 print(f"Media: {media}")
 print(f"Status: {resultado}")
-print("\n----------BOLETIM DE NOTAS----------")
+print("----------BOLETIM DE NOTAS----------")
 
 
 
