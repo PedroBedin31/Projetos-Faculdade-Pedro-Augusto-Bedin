@@ -6,7 +6,7 @@ print("            REGRAS: Escolha um número de 1 a 100             ")
 print("O computador irá gerar um número aleatório, tente adivinha-lo")
 print("-------------------------------------------------------------")
 
-input("Clique qualquer botão para continuar... ")
+input("Clique o botão ENTER para continuar... ")
 
 numero_secreto = random.randint(1, 100)
 
