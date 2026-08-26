@@ -11,7 +11,7 @@ input("Clique o botão ENTER para continuar... ")
 numero_secreto = random.randint(1, 100)
 
 palpite = int(input("Digite um número de 1 a 100 "))
-tentativas = 0
+tentativas = 1
 
 while palpite != numero_secreto:
     if palpite < numero_secreto:
