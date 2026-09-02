@@ -26,7 +26,7 @@ print(f"Disciplina: {disciplina}")
 print(f"Nota 1: {nota1}")
 print(f"Nota 2: {nota2}")
 print(f"Media: {media}")
-print(f"Status: {resultado}")
+print(f"Status: {resultado}") 
 print("----------BOLETIM DE NOTAS----------")
 
 
